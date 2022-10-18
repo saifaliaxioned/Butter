@@ -219,16 +219,16 @@ h2,h3,h4 {
 }
 .sandwich-3 {
   width: 51%;
-  z-index: 1;
+  z-index: 6;
   top: 88%;
   transform: translateY(0);
   right: 52%;
-  animation: floatSandwich 5s ease 11s;
+  animation: floatSandwich 5s ease 11s forwards;
 }
 @keyframes floatSandwich {
   0% { transform: translateY(0); }
   70% { transform: translateY(-50px); }
-  100% { transform: translateY(0); }
+  100% { transform: translateY(-15px); }
 }
 
 .mayo {
@@ -290,6 +290,7 @@ h2,h3,h4 {
 
 .happySonali {
   width: 69%;
+  z-index: 1;
   top: 47%;
   right: 0;
   transform: translateX(142%);
