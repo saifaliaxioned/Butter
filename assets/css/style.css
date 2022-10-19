@@ -124,7 +124,6 @@ li {
 figure{
   width: 30%;
   position: absolute;
-  /* left: -40%; */
 }
 
 .table {
@@ -152,8 +151,8 @@ figure{
   100% { transform: translateX(-125%); }
 }
 
-h2,h3,h4 {
-  width: 50%;
+h2,h3,h4,h5 {
+  width: 54%;
   position: absolute;
   top: 26%;
   left: 23%;
@@ -165,12 +164,12 @@ h2,h3,h4 {
 
 .text1 {
   transform: translateX(-147%);
-  animation: text1 7s cubic-bezier(0.36, 1.18, 0.99, 1) 2.9s;
+  animation: text1 6.5s cubic-bezier(0.36, 1.18, 0.99, 1) 2.9s;
 }
 
 @keyframes text1 {
   0% { transform: translateX(-147%); }
-  30% { transform: translateX(0); }
+  15% { transform: translateX(0); }
   70% { transform: translateX(0); }
   100% { transform: translateX(-147%); }
 }
@@ -178,32 +177,32 @@ h2,h3,h4 {
 .sadSonali {
   width: 69%;
   top: 47%;
-  right: 0;
+  right: -6px;
   transform: translateX(142%);
-  animation: sad 7s cubic-bezier(0.36, 1.18, 0.99, 1) 2.7s;
+  animation: sad 6.5s cubic-bezier(0.36, 1.18, 0.99, 1) 2.7s;
 }
 
 @keyframes sad {
   0% { transform: translateX(142%); }
-  30% { transform: translateX(0); }
+  15% { transform: translateX(0); }
   70% { transform: translateX(0); }
   100% { transform: translateX(142%); }
 }
 
-.text3,.text4,.chef,.getRecipe,.vegMayo,.hat{ display: none; }
 .sandWich-plate {
   width: 100%;
   height: 200px;
   position: absolute;
+  z-index: 6;
   top: 57%;
   transform: translateX(-63%);
-  animation: secondPlate 19s ease 8s;
+  animation: secondPlate 21s ease 8s;
 }
 
 @keyframes secondPlate {
   0% { transform: translateX(-63%); }
-  30% { transform: translateX(0%); }
-  70% { transform: translateX(0%); }
+  10% { transform: translateX(0%); }
+  95% { transform: translateX(0%); }
   100% { transform: translateX(-63%); }
 }
 
@@ -219,11 +218,11 @@ h2,h3,h4 {
 }
 .sandwich-3 {
   width: 51%;
-  z-index: 6;
+  z-index: 2;
   top: 88%;
   transform: translateY(0);
   right: 52%;
-  animation: floatSandwich 5s ease 11s forwards;
+  animation: floatSandwich 3.3s ease 14s forwards;
 }
 @keyframes floatSandwich {
   0% { transform: translateY(0); }
@@ -236,19 +235,13 @@ h2,h3,h4 {
   top: 90%;
   right: 52%;
   opacity: 1;
-  animation: mayo 7s ease 10s;
+  animation: mayo 7s ease 12s;
 }
 
 @keyframes mayo {
-  0% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 0.5;
-  }
-  100% {
-    opacity: 1;
-  }
+  0% { opacity: 0; }
+  50% { opacity: 0; }
+  100% { opacity: 1; }
 }
 
 .knife {
@@ -258,7 +251,7 @@ h2,h3,h4 {
   z-index: 3;
   transform: translateX(-160%) rotate(301deg);
   opacity: 0;
-  animation: knife 1s ease-in-out 14s; 
+  animation: knife 1s ease-in-out 16s; 
 }
 
 @keyframes knife {
@@ -278,12 +271,12 @@ h2,h3,h4 {
 
 .text2 {
   transform: translateX(-170%);
-  animation: text2 9s cubic-bezier(0.36, 1.18, 0.99, 1) 17s;
+  animation: text2 6s cubic-bezier(0.36, 1.18, 0.99, 1) 17s;
 }
 
 @keyframes text2 {
   0% { transform: translateX(-170%); }
-  30% { transform: translateX(0); }
+  10% { transform: translateX(0); }
   70% { transform: translateX(0); }
   100% { transform: translateX(-170%); }
 }
@@ -292,18 +285,104 @@ h2,h3,h4 {
   width: 69%;
   z-index: 1;
   top: 47%;
-  right: 0;
+  right: -10px;
   transform: translateX(142%);
-  animation: happy 9s cubic-bezier(0.36, 1.18, 0.99, 1) 17s;
+  animation: happy 6s cubic-bezier(0.36, 1.18, 0.99, 1) 17s;
 }
 
 @keyframes happy {
   0% { transform: translateX(142%); } 
-  30% { transform: translateX(0); }
+  10% { transform: translateX(0); }
   70% { transform: translateX(0); }
   100% { transform: translateX(142%); }
 }
 
+.chef {
+  width: 69%;
+  top: 47%;
+  right: -10px;
+  transform: translateX(142%);
+  animation: happy 7s cubic-bezier(0.36, 1.18, 0.99, 1) 23s;
+}
+
+.text3 { left: 1%; }
+
+.text3,.text4 {
+  width: 100%;
+  text-align: center;
+  transform: translateX(-170%);
+  animation: text2 7s cubic-bezier(0.36, 1.18, 0.99, 1) 23s;
+}
+
+.text4 {
+  top: 32%;
+  left: 1%;
+}
+
+.text5 {
+  width: 68%;
+  left: 15%;
+  transform: translateX(-170%);
+  animation: text5 7s cubic-bezier(0.36, 1.18, 0.99, 1) 30s forwards;
+}
+
+@keyframes text5 {
+  0% { transform: translateX(-170%); }
+  10% { transform: translateX(0); }
+  100% { transform: translateX(0); }
+}
+
+.vegMayo {
+  width: 35%;
+  top: 71%;
+  right: 33%;
+  transform: translateX(220%);
+  animation: vegMayo 7s cubic-bezier(0.36, 1.18, 0.99, 1) 30s forwards;
+}
+
+@keyframes vegMayo {
+  0% { transform: translateX(220%); } 
+  10% { transform: translateX(0); }
+  100% { transform: translateX(0); }
+}
+
+.hat {
+  width: 42%;
+  z-index: 3;
+  top: 59%;
+  right: 24%;
+  transform: translate(-192%,-93%);
+  animation: hat 4s cubic-bezier(0.36, 1.18, 0.99, 1) 32s forwards;
+}
+
+@keyframes hat {
+  0% { transform: translate(-192%,-93%); } 
+  10% { transform: translate(0,-80%); }
+  100% { transform: translate(0); }
+}
+
+.getRecipe {
+  position: absolute;
+  top: 45%;
+  right: 30%;
+  transform: translate(-192%,-93%);
+  animation: btn 4s cubic-bezier(0.22, 0.61, 0.36, 1) 35s forwards;
+}
+
+@keyframes btn {
+  0% { transform: translate(-192%,-170%); } 
+  10% { transform: translate(0); }
+  100% { transform: translate(0); }
+}
+
+.getRecipe a {
+  padding: 8px 20px;
+  border-radius: 8px;
+  background: rgb(58,46,137);
+  color: rgb(255,255,255);
+  font-size: 17px;
+  text-transform: capitalize;
+}
 /*=================================
   main styling ends here
 =================================*/  
